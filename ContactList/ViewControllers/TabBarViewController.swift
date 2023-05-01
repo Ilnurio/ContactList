@@ -22,7 +22,7 @@ class TabBarViewController: UITabBarController {
         
         // инициализируем массив persons и передаем в контроллеры
         let persons = Person.getContactList()
-        personsVC.persons = persons
-        contactsVC.persons = persons
+        personsVC.personList = persons
+        contactsVC.personList = persons
     }
 }
