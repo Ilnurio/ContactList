@@ -7,23 +7,22 @@
 
 import UIKit
 
+// в этом контроллере и нужно инициализировать первоначально массив и передать его на другие контроллеры
 class TabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupViewControllers()
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // настраиваем контроллеры для перехода, инициализируем их экземпляры
+    private func setupViewControllers() {
+        guard let personsVC = viewControllers?.first as? PersonsListViewController else { return }
+        guard let contactsVC = viewControllers?.last as? ContactsListViewController else { return }
+        
+        // инициализируем массив persons и передаем в контроллеры
+        let persons = Person.getContactList()
+        personsVC.persons = persons
+        contactsVC.persons = persons
     }
-    */
-
 }
