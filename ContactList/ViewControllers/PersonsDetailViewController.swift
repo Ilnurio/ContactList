@@ -17,6 +17,8 @@ final class PersonsDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // чтобы задать заголовок можем сразу это сделать через title
+        title = person.fullName
         mobilePhoneLabel.text = person.mobileInfo
         emailLabel.text = person.eMailInfo
     }

@@ -8,7 +8,7 @@
 import UIKit
 
 // в этом контроллере и нужно инициализировать первоначально массив и передать его на другие контроллеры
-class TabBarViewController: UITabBarController {
+final class TabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -11,11 +11,6 @@ final class PersonsListViewController: UITableViewController {
     
     var personList: [Person] = []
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        tableView.rowHeight = 50
-    }
-    
     // MARK: - UITableViewDataSource
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         personList.count
