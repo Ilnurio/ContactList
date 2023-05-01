@@ -13,7 +13,7 @@ final class ContactsListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.rowHeight = 50
+        tableView.rowHeight = 40
     }
 }
 
@@ -22,9 +22,9 @@ final class ContactsListViewController: UITableViewController {
         override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             personList.count
         }
-        
+
         override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "contacts", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "mobileNumber", for: indexPath)
             var content = cell.defaultContentConfiguration()
             let person = personList[indexPath.row]
             content.text = person.mobilePhone
@@ -34,12 +34,8 @@ final class ContactsListViewController: UITableViewController {
         }
         
         override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-            switch section {
-            case 1:
-                return "\(section)"
-            default:
-                return ""
+            // через фор сделать
+            return ""
             }
         }
-    }
     

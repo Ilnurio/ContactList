@@ -6,7 +6,10 @@
 //
 
 final class DataStore {
-    let names: [String] = [
+    // обьявляем static свойство для синглтона
+    static let shared = DataStore()
+    
+    let names = [
         "Ilnur",
         "Julia",
         "Petr",
@@ -19,7 +22,7 @@ final class DataStore {
         "Ruslan"
     ]
 
-    let surNames: [String] = [
+    let surnames = [
         "Fattakhov",
         "Frolov",
         "Ginadyan",
@@ -32,7 +35,7 @@ final class DataStore {
         "Kasseta"
     ]
 
-    let eMails: [String] = [
+    let emails = [
         "qwe@mail.ru",
         "dyrew@mail.ru",
         "ldlsj@mail.ru",
@@ -45,7 +48,7 @@ final class DataStore {
         "rtnec@mail.ru"
     ]
 
-    let mobilePhone: [String] = [
+    let mobilePhones = [
         "7929345674",
         "9102394321",
         "3456565756",
@@ -57,4 +60,6 @@ final class DataStore {
         "3486900382",
         "2409390313"
     ]
+    
+    private init() {}
 }

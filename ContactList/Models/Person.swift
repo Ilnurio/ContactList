@@ -7,12 +7,12 @@
 
 struct Person {
     let name: String
-    let surName: String
+    let surname: String
     let eMail: String
     let mobilePhone: String
     
     var title: String {
-        "\(name) \(surName)"
+        "\(name) \(surname)"
     }
     
     var mobileInfo: String {
@@ -29,9 +29,9 @@ struct Person {
         for _ in 1...10 {
             let person = Person(
                 name: person.names.randomElement() ?? "",
-                surName: person.surNames.randomElement() ?? "",
-                eMail: person.eMails.randomElement() ?? "",
-                mobilePhone: person.mobilePhone.randomElement() ?? ""
+                surname: person.surnames.randomElement() ?? "",
+                eMail: person.emails.randomElement() ?? "",
+                mobilePhone: person.mobilePhones.randomElement() ?? ""
             )
             persons.append(person)
         }
