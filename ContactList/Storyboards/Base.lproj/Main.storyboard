@@ -48,9 +48,9 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xIj-5k-SG6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1284" y="-488"/>
+            <point key="canvasLocation" x="1283" y="-428"/>
         </scene>
-        <!--Contacts List View Controller-->
+        <!--Contacts-->
         <scene sceneID="c4D-cb-rZc">
             <objects>
                 <tableViewController id="AS4-fX-Zhv" customClass="ContactsListViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
@@ -73,28 +73,12 @@
                             <outlet property="delegate" destination="AS4-fX-Zhv" id="rvE-3f-jQk"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Contacts" image="phone.circle" catalog="system" id="xeO-5V-eDC"/>
                     <navigationItem key="navigationItem" id="tY7-n2-xzb"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mBd-az-X8O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2100" y="372"/>
-        </scene>
-        <!--Contacts-->
-        <scene sceneID="W8C-WR-bKT">
-            <objects>
-                <navigationController id="5X0-Xo-bhS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Contacts" image="phone.circle" catalog="system" id="hHs-us-co1"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xKW-db-XHv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="AS4-fX-Zhv" kind="relationship" relationship="rootViewController" id="qdK-qz-TIc"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AYB-OX-bdx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1286" y="372"/>
+            <point key="canvasLocation" x="1283" y="311"/>
         </scene>
         <!--Person Info-->
         <scene sceneID="20U-xb-3Ac">
@@ -141,7 +125,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9qg-3T-W9z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2100" y="-488"/>
+            <point key="canvasLocation" x="2089" y="-429"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aYK-xm-zRk">
@@ -172,7 +156,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="zmZ-BC-hWm" kind="relationship" relationship="viewControllers" id="0fe-4c-BSc"/>
-                        <segue destination="5X0-Xo-bhS" kind="relationship" relationship="viewControllers" id="4Gi-16-v1K"/>
+                        <segue destination="AS4-fX-Zhv" kind="relationship" relationship="viewControllers" id="8hQ-vQ-vxN"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aky-CD-hPC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

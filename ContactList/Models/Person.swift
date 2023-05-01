@@ -11,7 +11,7 @@ struct Person {
     let eMail: String
     let mobilePhone: String
     
-    var title: String {
+    var fullName: String {
         "\(name) \(surname)"
     }
     
@@ -24,17 +24,43 @@ struct Person {
     }
     
     static func getContactList() -> [Person] {
+        // создаем пустой массив, чтобы его заполнить объектами данных
         var persons:[Person] = []
-        let person = DataStore()
-        for _ in 1...10 {
+        // Данные берем из класса DataStore создавая экземпляры класса(массивы)
+        // свойсто shuffled() перемешивает данные в массиве данных
+        let names = DataStore.shared.names.shuffled()
+        let surnames = DataStore.shared.surnames.shuffled()
+        let emails = DataStore.shared.emails.shuffled()
+        let phones = DataStore.shared.mobilePhones.shuffled()
+        
+        // создаем свойство, которое принимает наименьшее количество элементов массива
+        let iterationCount = min(
+            names.count,
+            surnames.count,
+            emails.count,
+            phones.count
+        )
+        
+        // перебираем в цикле целые числа(индексы) для дальнейшего извлечения данных
+        // внутри цикла инициализируем экземпляр модели
+        for index in 0..<iterationCount {
             let person = Person(
-                name: person.names.randomElement() ?? "",
-                surname: person.surnames.randomElement() ?? "",
-                eMail: person.emails.randomElement() ?? "",
-                mobilePhone: person.mobilePhones.randomElement() ?? ""
+                // передаем значение по индексу, таким образом берем первый элемент массива
+                name: names[index],
+                surname: surnames[index],
+                eMail: emails[index],
+                mobilePhone: phones[index]
             )
+            
             persons.append(person)
         }
+        
         return persons
     }
+}
+
+// чтобы не запоминать как называются системные кнопки можно сделать отдельное перечисление
+enum Contacts: String {
+    case phone = "phone"
+    case email = "tray"
 }

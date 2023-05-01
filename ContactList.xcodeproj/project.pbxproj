@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46B3986E2A000EF400513451 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B3986D2A000EF400513451 /* TabBarViewController.swift */; };
 		46F0439F29FD8105001B0E7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F0439E29FD8105001B0E7A /* AppDelegate.swift */; };
 		46F043A129FD8105001B0E7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F043A029FD8105001B0E7A /* SceneDelegate.swift */; };
 		46F043A629FD8105001B0E7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46F043A429FD8105001B0E7A /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46B3986D2A000EF400513451 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		46F0439B29FD8105001B0E7A /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F0439E29FD8105001B0E7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46F043A029FD8105001B0E7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				46F043C029FD910E001B0E7A /* PersonsListViewController.swift */,
 				46F043C329FD9DA2001B0E7A /* PersonsDetailViewController.swift */,
 				46F043C529FDBCEC001B0E7A /* ContactsListViewController.swift */,
+				46B3986D2A000EF400513451 /* TabBarViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46B3986E2A000EF400513451 /* TabBarViewController.swift in Sources */,
 				46F0439F29FD8105001B0E7A /* AppDelegate.swift in Sources */,
 				46F043C129FD910E001B0E7A /* PersonsListViewController.swift in Sources */,
 				46F043BB29FD8471001B0E7A /* Person.swift in Sources */,
